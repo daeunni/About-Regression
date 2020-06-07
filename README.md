@@ -10,3 +10,11 @@ https://www.kaggle.com/danevans/world-bank-wdi-212-health-systems/kernels
 - 잔차가정을 만족하는가? (선형성)
 - 등분상성을 만족하는가?
 - **다중공선성**
+
+4. 결과
+- c_lm_log_del2 <- lm(log(ConfirmedCases)~days_from_case_100+days_from_first_death+log(pop)+Health_exp_per_capita_USD_2016+per_capita_exp_PPP_2016)
+summary(c_lm_log_del2);plot(c_lm_log_del2) 로 적합한 결과
+ 
+R스퀘어 : 0.779
+F : 103.8
+잔차 : 굿굿
